@@ -3,43 +3,68 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aplicativo de gestion de usuario</title>
+    <title>formularios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
   	<header>
   	<!--barra de navegaion-->
   	<nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">manejo de archivos</a>
+  <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Formularios</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
-        <!-- control de usuarios-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="get.html">metodo get</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="post.html">metodo post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="validacion.html">validacion de formulario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="escapar.html">escapado de caracteres</a>
+        </li>
+        <!-- control de usuarios-->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Manejo de archivo
+            Sesiones
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="crearuser.php">crear usuario</a></li>
-            <li><a class="dropdown-item" href="buscaruser.php">buscar usuario</a></li>            
-            <li><a class="dropdown-item" href="guardarpdf.php">reporte usuario</a></li>
+            <li><a class="dropdown-item" href="start.php">iniciar sesión</a></li>
+            <li><a class="dropdown-item" href="get.php">obtener datos de sesion</a></li>            
+            <li><a class="dropdown-item" href="modifys.php">modificar variables de sesion</a></li>
+            <li><a class="dropdown-item" href="delete.php">destruir sesión</a></li>
           </ul>
          
         </li>
-      
+
+
+        <!--almacena preferrencia de articulos y los guarda en el mismo hosting qu es eguarde o en el navegador web para consultar en el mismo navegador-->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cookies
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="create.php">Crear</a></li>
+            <li><a class="dropdown-item" href="modificarcookie.php">Modificar</a></li>
+            <li><a class="dropdown-item" href="eliminarcookie.php">Eliminar</a></li>
+            <li><a class="dropdown-item" href="verificarcookie.php">Eliminar</a></li>
+          </ul>
+        </li>
+      </form>
     </div>
- </ul>
-</div>
+  </div>
 </nav>
 </header>
 
 <div class="container">
-    <h1>crear usuario</h1>
-    <p>se crea los usuarios para despues generar un informe en archivos txt</p>
+    <h1>metodos get  and put</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar faucibus neque, ut molestie eros commodo sed. Nulla facilisi. Mauris fringilla, magna vitae rhoncus ultrices, leo nunc vestibulum felis, at sollicitudin libero purus vitae nulla. Sed non convallis nibh, at molestie elit. Vestibulum et fringilla tellus, a tempor nunc. Nullam nec fringilla nibh. Aliquam aliquet fermentum felis non pellentesque. Vestibulum at cursus libero, id pretium justo. Sed ultricies ac metus sed pharetra. Morbi sit amet ultricies lacus. Aenean sed nulla ultricies, consectetur magna in, venenatis lacus. Donec convallis, justo eget finibus scelerisque, eros ipsum ultrices orci, vitae tristique sem lectus sed nisl. Fusce sit amet mi nec augue tempor commodo.</p>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
